@@ -1,10 +1,18 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 function Index() {
   return (
-    <div>
-      <h1 className="text-3xl text-center">Your Blank Canvas</h1>
-      <p className="text-center">
-        Chat with the agent to start making edits.
-      </p>
+    <div className="container mx-auto p-4">
+      <Card className="text-center">
+        <CardHeader>
+          <CardTitle className="text-3xl">Welcome to Horse Haven</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="mb-4">Discover the world of horses. Learn about different breeds, care tips, and more!</p>
+          <Button variant="primary">Get Started</Button>
+        </CardContent>
+      </Card>
     </div>
   );
 }
